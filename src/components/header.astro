@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../assets/logo.jpg'
+import Nav from '../components/navigation.astro'
+---
+
+<!-- Header -->
+<header class="bg-gradient-to-r from-raisan_black to-un_blue text-white shadow-lg">
+  <div class="container mx-auto px-4 py-6">
+    <div class="flex justify-between items-center">
+      <h1><a href="/"><Image src={Logo} alt="Erwin Interactive" /></a></h1>
+      <Nav />
+    </div>
+  </div>
+</header>

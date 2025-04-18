@@ -1,0 +1,35 @@
+---
+const MenuItems = [
+  {
+    title: "HOME",
+    path: "/",
+  },
+  {
+    title: "ABOUT",
+    path: "/about",
+  },
+  {
+    title: "BLOG",
+    path: "/blog",
+  },
+  {
+    title: "CONTACT",
+    path: "/contact",
+  },
+];
+---
+
+<nav class="hidden md:flex space-x-10">
+  {
+    MenuItems.map((item) => (
+      <a href={item.path} class="text-white hover:text-yellow-400 transition">
+        {item.title}
+      </a>
+    ))
+  }
+</nav>
+<div class="md:hidden">
+  <button class="text-white focus:outline-none">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>
+</div>
