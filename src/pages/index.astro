@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/main.astro';
+import ServiceCard from '../components/servicecard.astro';
 ---
 
 <Layout>
   <!-- Hero Section -->
-  <section class="py-20 bg-gradient-to-b from-[#1D1E2C] to-[#5899E2] text-white">
+  <section class="py-20 bg-gradient-to-b from-raisan_black to-argentinian_blue text-white">
     <div class="container mx-auto px-4 text-center">
       <h1 class="text-5xl md:text-6xl font-bold mb-6">Full Stack Solutions for Your Digital Needs</h1>
       <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Erwin Interactive delivers comprehensive development services from concept to deployment, helping businesses create powerful digital experiences.</p>
@@ -19,61 +20,13 @@ import Layout from '../layouts/main.astro';
   <section class="py-20">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Our Services</h2>
-
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fas fa-laptop-code text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">Web Development</h3>
-          <p class="text-gray-600">Custom web applications and websites built with modern technologies that deliver exceptional user experiences.</p>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fas fa-mobile-alt text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">App Development</h3>
-          <p class="text-gray-600">Native and cross-platform mobile applications designed to engage users and grow your business.</p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fab fa-wordpress text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">WordPress Solutions</h3>
-          <p class="text-gray-600">Custom WordPress themes, plugins, and managed hosting for your content-driven website.</p>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fas fa-server text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">VPS Hosting</h3>
-          <p class="text-gray-600">Reliable, high-performance virtual private servers optimized for your specific application needs.</p>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fas fa-globe text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">Domain Registration</h3>
-          <p class="text-gray-600">Secure your online identity with domain registration and management services.</p>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="bg-white p-8 rounded-lg shadow-md transform transition hover:-translate-y-2">
-          <div class="text-indigo-600 mb-4">
-            <i class="fas fa-search text-4xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-800">SEO & SEM</h3>
-          <p class="text-gray-600">Boost your online visibility with search engine optimization and marketing strategies.</p>
-        </div>
+        <ServiceCard title="Web Development" description="Custom web applications and websites built with modern technologies that deliver exceptional user experiences." icon="fa-laptop-code" />
+        <ServiceCard title="App Development" description="Native and cross-platform mobile applications designed to engage users and grow your business." icon="fa-mobile-alt" />
+        <ServiceCard title="WordPress Solutions" description="Custom WordPress themes, plugins, and managed hosting for your content-driven website." icon="fa-wordpress" />
+        <ServiceCard title="Cloud Solutions" description="Scalable cloud infrastructure and services to enhance your business operations." icon="fa-cloud" />
+        <ServiceCard title="Domain Registration" description="Secure your online identity with domain registration and management services." icon="fa-globe" />
+        <ServiceCard title="SEO & SEM" description="Boost your online visibility with search engine optimization and marketing strategies." icon="fa-search" />
       </div>
     </div>
   </section>
@@ -82,7 +35,6 @@ import Layout from '../layouts/main.astro';
   <section class="py-16 bg-gray-800 text-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Our Development Process</h2>
-
       <div class="flex flex-col md:flex-row items-center justify-center gap-10">
         <div class="md:w-1/2">
           <h3 class="text-2xl font-bold mb-4">End-to-End Excellence</h3>
