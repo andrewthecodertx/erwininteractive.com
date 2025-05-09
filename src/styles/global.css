@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-cambridge_blue: #84A492;
-  --color-brown: #8B898D;
-  --color-ecru: #C3A980;
-  --color-rich_black: #071013;
-  --color-lavender: #EAE8FF;
-  --color-violet: #582C4D;
+  --font-tuffy: "Tuffy", sans-serif;
+
+  --color-dark_purple: #3c1b43;
+  --color-tyrian_purple: #501537;
+  --color-magenta: #922d50;
+  --color-olivine: #8cba80;
+  --color-mindaro: #d4e79e;
 }

@@ -1,17 +1,19 @@
 ---
 import Layout from '../layouts/main.astro';
 import ServiceCard from '../components/servicecard.astro';
+import { Image } from 'astro:assets';
+import process from '../assets/software_development_process.png';
 ---
 
 <Layout>
   <!-- Hero Section -->
-  <section class="py-20 bg-rich_black text-white">
+  <section class="py-20 bg-dark_purple text-white">
     <div class="container mx-auto px-4 text-center">
       <h1 class="text-5xl md:text-6xl font-bold mb-6">Full Stack Solutions for Your Digital Needs</h1>
       <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Erwin Interactive delivers comprehensive development services from concept to deployment, helping businesses create powerful digital experiences.</p>
       <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-        <a href="#" class="bg-cambridge_blue hover:bg-ecru text-gray-600 font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">Get a Quote</a>
-        <a href="#" class="bg-transparent border-2 border-ecru hover:border-white hover:bg-white hover:text-cambridge_blue text-ecru font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">Our Services</a>
+        <a href="#" class="bg-mindaro text-dark_purple font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">Get a Quote</a>
+        <a href="#" class="bg-transparent border-2 border-mindaro text-mindaro font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">Our Services</a>
       </div>
     </div>
   </section>
@@ -21,18 +23,18 @@ import ServiceCard from '../components/servicecard.astro';
     <div class="container mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Our Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <ServiceCard title="Web Development" description="Custom web applications and websites built with modern technologies that deliver exceptional user experiences." icon="fa-laptop-code" />
-        <ServiceCard title="App Development" description="Native and cross-platform mobile applications designed to engage users and grow your business." icon="fa-mobile-alt" />
-        <ServiceCard title="WordPress Solutions" description="Custom WordPress themes, plugins, and managed hosting for your content-driven website." icon="fa-wordpress" />
-        <ServiceCard title="Cloud Solutions" description="Scalable cloud infrastructure and services to enhance your business operations." icon="fa-cloud" />
-        <ServiceCard title="Domain Registration" description="Secure your online identity with domain registration and management services." icon="fa-globe" />
-        <ServiceCard title="SEO & SEM" description="Boost your online visibility with search engine optimization and marketing strategies." icon="fa-search" />
+        <ServiceCard title="Web Development" description="Custom web applications and websites built with modern technologies that deliver exceptional user experiences." background="bg-olivine" icon="fa-laptop-code" />
+        <ServiceCard title="App Development" description="Native and cross-platform mobile applications designed to engage users and grow your business." background="bg-mindaro" icon="fa-mobile-alt" />
+        <ServiceCard title="WordPress Solutions" description="Custom WordPress themes, plugins, and managed hosting for your content-driven website." background="bg-magenta" color="text-white" icon="fa-wordpress" />
+        <ServiceCard title="Cloud Solutions" description="Scalable cloud infrastructure and services to enhance your business operations." background="bg-dark_purple" color="text-white" icon="fa-cloud" />
+        <ServiceCard title="Domain Registration" description="Secure your online identity with domain registration and management services."background="bg-mindaro" icon="fa-globe" />
+        <ServiceCard title="SEO & SEM" description="Boost your online visibility with search engine optimization and marketing strategies." background="bg-olivine" icon="fa-search" />
       </div>
     </div>
   </section>
 
   <!-- Process Section -->
-  <section class="py-16 bg-rich_black text-white">
+  <section class="py-16 bg-mindaro text-black">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Our Development Process</h2>
       <div class="flex flex-col md:flex-row items-center justify-center gap-10">
@@ -44,34 +46,34 @@ import ServiceCard from '../components/servicecard.astro';
               <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
               <div>
                 <span class="font-bold">Discovery & Planning</span>
-                <p class="text-gray-300">Understanding your needs and creating a comprehensive roadmap</p>
+                <p class="text-gray-600">Understanding your needs and creating a comprehensive roadmap</p>
               </div>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
               <div>
                 <span class="font-bold">Design & Development</span>
-                <p class="text-gray-300">Creating intuitive interfaces and robust backend systems</p>
+                <p class="text-gray-600">Creating intuitive interfaces and robust backend systems</p>
               </div>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
               <div>
                 <span class="font-bold">Testing & Deployment</span>
-                <p class="text-gray-300">Ensuring quality and performance before launch</p>
+                <p class="text-gray-600">Ensuring quality and performance before launch</p>
               </div>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
               <div>
                 <span class="font-bold">Maintenance & Growth</span>
-                <p class="text-gray-300">Ongoing support and strategic enhancements</p>
+                <p class="text-gray-600">Ongoing support and strategic enhancements</p>
               </div>
             </li>
           </ul>
         </div>
         <div class="md:w-1/2">
-          <img src="/api/placeholder/500/400" alt="Development Process" class="rounded-lg shadow-lg">
+          <Image src={process} alt="Development Process" />
         </div>
       </div>
     </div>
@@ -92,7 +94,7 @@ import ServiceCard from '../components/servicecard.astro';
             <span class="text-sm bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Web Development</span>
           </div>
         </div>
-        
+
         <!-- Project 2 -->
         <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
           <img src="/api/placeholder/400/300" alt="Project 2" class="w-full">
@@ -102,7 +104,7 @@ import ServiceCard from '../components/servicecard.astro';
             <span class="text-sm bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">App Development</span>
           </div>
         </div>
-        
+
         <!-- Project 3 -->
         <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
           <img src="/api/placeholder/400/300" alt="Project 3" class="w-full">
@@ -135,7 +137,7 @@ import ServiceCard from '../components/servicecard.astro';
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <p class="text-gray-600 mb-6">"ErwinInteractive transformed our business with a custom web application that streamlined our entire operation. The attention to detail and technical expertise was outstanding."</p>
+          <p class="text-gray-600 mb-6">"Erwin Interactive transformed our business with a custom web application that streamlined our entire operation. The attention to detail and technical expertise was outstanding."</p>
           <div class="flex items-center">
             <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
               <span class="text-indigo-700 font-bold">JS</span>
@@ -193,7 +195,7 @@ import ServiceCard from '../components/servicecard.astro';
   </section>
 
   <!-- Contact Section -->
-  <section class="py-16 bg-indigo-700 text-white">
+  <section class="py-16 bg-indigo-950 text-white">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
       <p class="text-xl mb-10 max-w-3xl mx-auto">
